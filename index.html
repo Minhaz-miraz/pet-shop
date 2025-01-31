@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html lang="en" data-theme="light">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <title>Pet Shop</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>     
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
@@ -55,9 +55,10 @@
 
     .low-left {
       width: 780px;
-      height: 400px;
+      height: 300px;
     }
-    *{
+
+    * {
       margin: 0px;
     }
   </style>
@@ -65,7 +66,7 @@
 </head>
 
 <body>
-  <header class="bg-color1 max-w-full">
+  <header class="bg-color1 max-w-full border border-b-2 xl:border">
     <nav class=" max-w-72   xl:max-w-screen-xl xl:mx-auto">
       <div class="navbar bg-">
         <div class="navbar-start xl:ml-32">
@@ -84,20 +85,25 @@
         <div class="navbar-end ml-5 lg:gap-2">
           <i class="hidden lg:block fa-solid fa-bell"></i>
           <i class="hidden lg:block fa-solid fa-magnifying-glass"></i>
-          <i class="relative left-14 fa-solid fa-bars lg:hidden"></i>
+          <i class="relative left-20 fa-solid fa-bars lg:hidden"></i>
           <button class="btn text-black bg-color1 border border-amber-200 font-sora hidden lg:block">Login</button>
           <button class="btn hidden lg:bg-color7  lg:w-20 lg:block lg:p-2 font-sora">Register</button>
         </div>
       </div>
     </nav>
+    <div class="lg:hidden">
+      <hr class="bg-black h-2/3">
+    </div>
 
 
   </header>
 
   <main>
     <div class=" max-w-72 ml-3 lg:hidden">
-      <h1 class="text-3xl font-adlam xl:font-semibold font-medium my-3 max-w-72 ml-10 lg:hidden">Pamper Your Pet, Because They Deserve the Bes</h1>
-      <p class="text-sm font-extralight font-sora my-3 max-w-72 ml-10 lg:hidden">Discover a world of treats, toys, and essentials
+      <h1 class="text-3xl font-adlam xl:font-semibold font-medium my-3 max-w-72 ml-10 lg:hidden">Pamper Your Pet,
+        Because They Deserve the Bes</h1>
+      <p class="text-sm font-extralight font-sora my-3 max-w-72 ml-10 lg:hidden">Discover a world of treats, toys, and
+        essentials
         handpicked
         for your furry friends. Shop now and make tails wag with joy!</p>
     </div>
@@ -108,7 +114,8 @@
 
 
     </div>
-    <div class="  xl:max-w-screen-xl xl:mx-auto  cat-img hero min-h-screen hidden lg:block" style="background-image: url(./c1-assets/cat-big.png);">
+    <div class="  xl:max-w-screen-xl xl:mx-auto  cat-img hero min-h-screen hidden lg:block"
+      style="background-image: url(./c1-assets/cat-big.png);">
       <div class="lg:bg-center"></div>
       <div class="hero-content text-left ">
         <div class="max-w-md cat-text">
@@ -127,7 +134,7 @@
     </section>
     <!-- trending pet -->
     <section
-      class="my-5 ml-10 grid grid-cols-2  max-w-72  gap-y-2 xl:mb-20 xl:grid xl:grid-cols-6 xl:max-w-screen-xl xl:mx-auto xl:my-20">
+      class="my-5 ml-14 grid grid-cols-2  max-w-72  gap-y-2 xl:mb-20 xl:grid xl:grid-cols-6 xl:max-w-screen-xl xl:mx-auto xl:my-20">
       <!-- car card -->
 
       <div class="card bg-[#F9DF8A] w-32 h-44 xl:w-40 xl:h-52 ">
@@ -198,8 +205,8 @@
       </div>
 
     </section>
-    <section class="xl:bg-color1 xl:py-20 max-w-72 ml-10 xl:max-w-full">
-      <div>
+    <section class="xl:bg-color1 xl:py-20 max-w-72 ml-14 xl:ml-0 xl:max-w-full">
+      <div class="text-left">
         <h1 class="font-adlam text-2xl pl-2 ml-5 mb-3 mx-auto xl:pl-36 xl:mb-10">Trending Pet Products</h1>
       </div>
       <div class="max-w-80 mx-auto xl:max-w-screen-xl xl:mx-auto xl:flex justify-evenly xl:mb-20">
@@ -215,20 +222,20 @@
           </figure>
         </div>
         <!-- trending-right -->
-        <div class=" my-5 grid grid-cols-2 max-w-72 ml-3 xl:max-w-screen-xl xl:mx-auto xl:grid xl:grid-cols-3">
+        <div class=" my-5 grid grid-cols-2 gap-3 max-w-72 xl:max-w-screen-xl xl:mx-auto xl:grid xl:grid-cols-3 xl:gap-4">
           <!-- card-1 -->
-          <div class="bg-white xl:w-72 h-28 flex mb-5 justify-evenly p-5 rounded-md">
-            <div class="bg-color1 w-20 h-20 flex rounded-md -ml-3">
-              <img class="p-5" src="./c1-assets/cute-pet-small.png">
+          <div class="bg-white border xl:w-72 h-28 flex mb-5 justify-evenly xl:p-5 rounded-md">
+            <div class="bg-color1 w-20 h-20 flex  rounded-md -ml-3">
+              <img class="xl:p-5" src="./c1-assets/cute-pet-small.png">
             </div>
             <div class="text-wrapp pt-2">
               <i class="bg-amber-500 fa-regular fa-star"></i>
               <p class="inline-block">4.5</p>
-              <h1 class="font-sora font-medium">Pet Bed</h1>
+              <h1 class="font-sora text-xs">Pet Bed</h1>
               <h1>$39.99</h1>
             </div>
           </div>
-          <div class="bg-white xl:w-72 h-28  flex justify-evenly p-5 rounded-md">
+          <div class="bg-white border xl:w-72 h-28  flex justify-evenly xl:p-5 rounded-md">
             <div class="bg-color1 w-20 h-20 flex rounded-md -ml-3">
               <img class="p-5" src="./c1-assets/cat-cartoon.png">
             </div>
@@ -239,7 +246,7 @@
               <h1>$39.99</h1>
             </div>
           </div>
-          <div class="bg-white xl:w-72 h-28 mb-5 flex justify-evenly p-5 rounded-md">
+          <div class="bg-white border xl:w-72 h-28 mb-5 flex justify-evenly xl:p-5 rounded-md">
             <div class="bg-color1 w-20 h-20 flex rounded-md -ml-3">
               <img class="p-5" src="./c1-assets/rabbit-cartoon.png">
             </div>
@@ -250,7 +257,7 @@
               <h1>$39.99</h1>
             </div>
           </div>
-          <div class="bg-white xl:w-72 h-28 flex justify-evenly p-5 rounded-md">
+          <div class="bg-white border xl:w-72 h-28 flex justify-evenly xl:p-5 rounded-md">
             <div class="bg-color1 w-20 h-20 flex rounded-md -ml-3">
               <img class="p-5" src="./c1-assets/bird-cartoon.png">
             </div>
@@ -261,7 +268,7 @@
               <h1>$39.99</h1>
             </div>
           </div>
-          <div class="bg-white xl:w-72 h-28 mb-5 flex justify-evenly p-5 rounded-md">
+          <div class="bg-white border xl:w-72 h-28 mb-5 flex justify-evenly xl:p-5 rounded-md">
             <div class="bg-color1 w-20 h-20 flex rounded-md -ml-3">
               <img class="p-5" src="./c1-assets/fish-cartoon.png">
             </div>
@@ -272,7 +279,7 @@
               <h1>$39.99</h1>
             </div>
           </div>
-          <div class="bg-white xl:w-72 h-28 flex justify-evenly p-5 rounded-md">
+          <div class="bg-white border xl:w-72 h-28 flex justify-evenly xl:p-5 rounded-md">
             <div class="bg-color1 w-20 h-20 flex rounded-md -ml-3">
               <img class="p-5" src="./c1-assets/cat-cartoon.png">
             </div>
@@ -283,7 +290,7 @@
               <h1>$39.99</h1>
             </div>
           </div>
-          <div class="bg-white xl:w-72 h-28 flex justify-evenly p-5 rounded-md">
+          <div class="bg-white border xl:w-72 h-28 flex justify-evenly xl:p-5 rounded-md">
             <div class="bg-color1 w-20 h-20 flex rounded-md -ml-3">
               <img class="p-5" src="./c1-assets/dog-cartoon.png">
             </div>
@@ -294,7 +301,7 @@
               <h1>$39.99</h1>
             </div>
           </div>
-          <div class="bg-white xl:w-72 h-28 flex justify-evenly p-5 rounded-md">
+          <div class="bg-white border xl:w-72 h-28 flex justify-evenly xl:p-5 rounded-md">
             <div class="bg-color1 w-20 h-20 flex rounded-md -ml-3">
               <img class="p-5" src="./c1-assets/cute-pet-small.png">
             </div>
@@ -305,7 +312,7 @@
               <h1>$39.99</h1>
             </div>
           </div>
-          <div class="bg-white hidden  xl:w-72 h-28 xl:flex xl:justify-evenly p-5 rounded-md">
+          <div class="bg-white border hidden  xl:w-72 h-28 xl:flex xl:justify-evenly xl:p-5 rounded-md">
             <div class="bg-color1 w-20 h-20 flex rounded-md -ml-3">
               <img class="p-5" src="./c1-assets/rabbit-cartoon.png">
             </div>
@@ -322,27 +329,47 @@
 
 
     </section>
+    <section class="max-w-72 ml-14  xl:max-w-screen-xl xl:mx-auto xl:my-20">
+      <div class="text-center xl:my-6">
+        <h1><span class="font-extrabold text-red-500">F</span>&<span class="font-extrabold text-red-500">Q</span></h1>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Size Chart of dog T-Shirt</div>
+        <div class="collapse-content">
+          <p class="bg-red-400 rounded-xl">XS,S,XL sir</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Courier Available</div>
+        <div class="collapse-content">
+          <p class="bg-red-400 rounded-xl ">Yes</p>
+        </div>
+      </div>
+
+    </section>
     <!-- low price -->
-    <section class=" max-w-72 ml-3 xl:max-w-screen-xl xl:mx-auto xl:my-20">
+    <section class=" max-w-72 ml-3 xl:max-w-screen-xl  xl:my-20">
       <div class="my-10">
-        <h1 class="font-adlam font-semibold text-2xl text-center">
+        <h1 class="font-adlam font-semibold text-2xl text-left ml-10 xl:text-left xl:ml-72">
           Everyday low Price
         </h1>
       </div>
       <!-- low-pic -->
-      <div class="ml-10 xl:flex xl:justify-between xl:gap-4 xl:max-w-screen-xl xl:mx-auto max-w-80 mx-auto">
+      <div class="ml-10 xl:ml-52  xl:flex xl:justify-around xl:max-w-6xl xl:gap-4  max-w-80  ">
         <!-- left -->
         <div
-          class="max-w-72 h-56 xl:w-64 xl:h-96 flex justify-center  xl:flex-1  bg-gradient-to-tl from-color3 to-color4 rounded-lg">
+           class=" max-w-80  xl:gap-50 h-56 xl:low-left  xl:h-96  flex  justify-evenly   bg-gradient-to-tl from-color3 to-color4 rounded-lg">
           <div class="font-sora mt-20">
             <p class="hidden xl:block text-black">Under Price</p>
-            <h1 class="xl:text-2xl xl:font-semibold font-semibold text-sm xl:mt-0 -mt-10 xl:ml-0 ml-7 ">Pet Grooming Mitt</h1>
+            <h1 class="xl:text-2xl xl:font-semibold font-semibold text-sm xl:mt-0 -mt-10 xl:ml-0 ml-7 ">Pet Grooming
+              Mitt</h1>
             <p class="text-white hidden xl:block ">(Easy Hair Removal)</p>
             <h1 class="font-adlam xl:font-bold xl:text-3xl xl:text-black text-white text-xl xl:ml-0 ml-7">$7.99</h1>
           </div>
-
           <div>
-            <img class="w-80" src="./c1-assets/cute-dog-mid.png" alt="">
+<img src="./c1-assets/cute-dog-mid.png" alt="">
           </div>
 
 
@@ -350,15 +377,15 @@
         </div>
         <!-- low-right -->
         <div
-          class="max-w-72 xl:my-0 my-5  h-56 flex justify-evenly  xl:flex xl:justify-around low-left bg-gradient-to-tl from-color5 to-color6 rounded-lg">
-          <div class= " xl:mt-20 xl:pt-10 font-sora mt-24 ml-5">
+          class="max-w-72 xl:my-0 my-5  xl:h-96 flex justify-evenly  xl:flex xl:justify-around bg-gradient-to-tl from-color5 to-color6 rounded-lg">
+          <div class=" xl:mt-20 xl:pt-10 font-sora mt-24 ml-5">
             <p class="font-semibold text-xl xl:ml-5 -mt-10">T-Shirt for Dogs</p>
             <h1 class="text-amber-400 font-semibold xl:text-2xl ">$7.99</h1>
           </div>
 
           <!-- low-right -->
           <div>
-            <img class="w-80 xl:mt-32 mt-2" src="./c1-assets/cute-pet-mid.png" alt="">
+            <img class="w-80  xl:mt-32 mt-10" src="./c1-assets/cute-pet-mid.png" alt="">
           </div>
 
 
@@ -369,7 +396,8 @@
 
     </section>
     <section class=" ml-12 max-w-72 my-10 xl:max-w-screen-xl xl:mx-auto  xl:my-20 ">
-      <div class="absolute z-10 bg-color1 py-10 rounded-xl xl:flex xl:justify-around  space-y-4 xl:max-w-screen-xl xl:mx-auto max-w-72 xl:px-52">
+      <div
+        class="absolute z-10 bg-color1 py-10 rounded-xl xl:flex xl:justify-around  space-y-4 xl:max-w-screen-xl xl:mx-auto max-w-72 xl:px-52">
         <div>
           <img class="p-5" src="./c1-assets/cute-pet-mid.png" alt="cute pet">
         </div>
@@ -387,27 +415,29 @@
 
   </main>
   <footer>
-    <footer class=" relative xl:top-52 top-96 z-0 max-w-full  xl:max-w-full    xl:pt-96  xl:flex xl:justify-evenly bg-color7 text-base-content p-10 pt-96 space-y-8">
+    <footer
+      class=" relative xl:top-52 top-96 z-0 max-w-full  xl:max-w-full    xl:pt-96  xl:flex xl:justify-evenly bg-color7 text-base-content p-10 pt-96 space-y-8">
       <nav>
-      <div>
-        <div class="flex gap-y-3">
-          <img src="./c1-assets/logo-footer.png" alt="">
-          <h1 class="font-semibold text-xl xl:ml-2 xl:mt-2">Browse4Pets</h1>
-        </div> <br> 
-        <h1 class="xl:w-96 max-w-72">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>friends</h1>
-      </div>
+        <div class="w-56">
+          <div class="flex gap-y-3">
+            <img src="./c1-assets/logo-footer.png" alt="">
+            <h1 class="font-semibold text-xl xl:ml-2 xl:mt-2 w-56">Browse4Pets</h1>
+          </div> <br>
+          <h1 class="xl:w-96 max-w-72">Discover a world of treats, toys, and <br> essentials handpicked for your furry
+            <br>friends</h1>
+        </div>
       </nav>
-      <nav>
-        <h6 class="text-md">Find a pet</h6>
-        <a class="link link-hover">Breeds</a> <br>
-        <a class="link link-hover">Contact us</a>
+      <nav class="w-56">
+        <h6 class="text-md w-56">Find a pet</h6>
+        <a class="link link-hover w-56">Breeds</a> <br>
+        <a class="link link-hover w-56">Contact us</a>
       </nav>
-      <nav>
-        <h6 class="text-sm text-black">Follow Us</h6>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-facebook"></i>
+      <nav class="w-56">
+        <h6 class="text-sm text-black w-56">Follow Us</h6>
+        <i class="fa-brands fa-linkedin w-56"></i>
+        <i class="fa-brands fa-instagram w-56"></i>
+        <i class="fa-brands fa-youtube w-56"></i>
+        <i class="fa-brands fa-facebook w-56"></i>
       </nav>
     </footer>
   </footer>
