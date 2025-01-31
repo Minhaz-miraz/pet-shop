@@ -11,6 +11,7 @@ module.exports = {
         'color4': '#ACD2FD',
         'color5': '#F9DF8A',
         'color6': '#FFF9F4',
+        'color7': '#FFDC2680'
       },
         fontFamily: {
             'adlam': ['ADLaM Display', 'serif'],
