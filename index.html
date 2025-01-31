@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+ <html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <title>Pet Shop</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>     
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
@@ -66,30 +66,27 @@
 
 <body>
   <header class="bg-color1 max-w-full">
-    <nav class=" max-w-72   xl:max-w-screen-lg xl:mx-auto">
+    <nav class=" max-w-72   xl:max-w-screen-xl xl:mx-auto">
       <div class="navbar bg-">
-        <div class="navbar-start">
+        <div class="navbar-start xl:ml-32">
           <img src="./c1-assets/logo-header.png" alt="">
           <a class="font-adlam font-medium text-xl hidden lg:block">Browse4Pets</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
+            <li><a class="font-medium">Find a pet</a></li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
+              <a class="font-medium">Breeds</a>
             </li>
-            <li><a>Item 3</a></li>
+            <li><a class="font-sora text-black font-medium">Contact us</a></li>
           </ul>
         </div>
-        <div class="navbar-end ml-5">
-          <i class="fa-solid fa-bars lg:hidden"></i>
-          <a class="btn hidden lg:block">Button</a>
+        <div class="navbar-end ml-5 lg:gap-2">
+          <i class="hidden lg:block fa-solid fa-bell"></i>
+          <i class="hidden lg:block fa-solid fa-magnifying-glass"></i>
+          <i class="relative left-14 fa-solid fa-bars lg:hidden"></i>
+          <button class="btn text-black bg-color1 border border-amber-200 font-sora hidden lg:block">Login</button>
+          <button class="btn hidden lg:bg-color7  lg:w-20 lg:block lg:p-2 font-sora">Register</button>
         </div>
       </div>
     </nav>
@@ -99,19 +96,19 @@
 
   <main>
     <div class=" max-w-72 ml-3 lg:hidden">
-      <h1 class="text-3xl font-adlam font-semibold my-3 max-w-72 ml-3 lg:hidden">Pamper Your Pet, Because They Deserve the Bes</h1>
-      <p class="text-sm font-extralight font-sora my-3 max-w-72 ml-3 lg:hidden">Discover a world of treats, toys, and essentials
+      <h1 class="text-3xl font-adlam xl:font-semibold font-medium my-3 max-w-72 ml-10 lg:hidden">Pamper Your Pet, Because They Deserve the Bes</h1>
+      <p class="text-sm font-extralight font-sora my-3 max-w-72 ml-10 lg:hidden">Discover a world of treats, toys, and essentials
         handpicked
         for your furry friends. Shop now and make tails wag with joy!</p>
     </div>
-    <button class="ml-5 lg:hidden z-10 relative top-3 btn bg-yellow-300 text-lg font-sora ">Find a pet</button>
+    <button class="ml-14 lg:hidden z-10 relative top-3 btn bg-yellow-300 text-lg font-sora ">Find a pet</button>
 
-    <img class=" max-w-72 ml-24 lg:hidden relative z-0  -top-10 w-1/2 h3/4" src="./c1-assets/cat-big.png" alt="">
+    <img class=" max-w-72 ml-32 lg:hidden relative z-0  -top-10 w-1/2 h3/4" src="./c1-assets/cat-big.png" alt="">
 
 
 
     </div>
-    <div class="  xl:max-w-screen-xl xl:mx-auto cat-img hero min-h-screen hidden lg:block" style="background-image: url(./c1-assets/cat-big.png);">
+    <div class="  xl:max-w-screen-xl xl:mx-auto  cat-img hero min-h-screen hidden lg:block" style="background-image: url(./c1-assets/cat-big.png);">
       <div class="lg:bg-center"></div>
       <div class="hero-content text-left ">
         <div class="max-w-md cat-text">
@@ -126,11 +123,11 @@
       </div>
     </div>
     <section class="max-w-72 mt-10 pl-5 xl:max-w-screen-xl xl:mx-auto xl:my-20">
-      <h1 class="font-adlam font-medium xl:font-semibold text-3xl">Browse By Categories</h1>
+      <h1 class=" ml-11 font-adlam font-medium xl:font-semibold text-3xl">Browse By Categories</h1>
     </section>
     <!-- trending pet -->
     <section
-      class="my-5 grid grid-cols-2  max-w-72 ml-3 gap-y-2 xl:mb-20 xl:grid xl:grid-cols-6 xl:max-w-screen-xl xl:mx-auto xl:my-20">
+      class="my-5 ml-10 grid grid-cols-2  max-w-72  gap-y-2 xl:mb-20 xl:grid xl:grid-cols-6 xl:max-w-screen-xl xl:mx-auto xl:my-20">
       <!-- car card -->
 
       <div class="card bg-[#F9DF8A] w-32 h-44 xl:w-40 xl:h-52 ">
@@ -201,11 +198,11 @@
       </div>
 
     </section>
-    <section class="xl:bg-color1 xl:py-20 max-w-72 ml-3 xl:max-w-screen-xl xl:mx-auto">
+    <section class="xl:bg-color1 xl:py-20 max-w-72 ml-10 xl:max-w-full">
       <div>
-        <h1 class="font-adlam text-2xl pl-2 ml-5 mb-3 mx-auto xl:pl-32 xl:mb-10">Trending Pet Products</h1>
+        <h1 class="font-adlam text-2xl pl-2 ml-5 mb-3 mx-auto xl:pl-36 xl:mb-10">Trending Pet Products</h1>
       </div>
-      <div class="max-w-80 mx-auto xl:max-w-screen-lg xl:mx-auto xl:flex justify-evenly xl:mb-20">
+      <div class="max-w-80 mx-auto xl:max-w-screen-xl xl:mx-auto xl:flex justify-evenly xl:mb-20">
         <!-- trending left -->
 
         <div class="card max-w-80 mx-auto bg-color2 xl:w-80 xl:h-70 shadow-xl">
@@ -218,7 +215,7 @@
           </figure>
         </div>
         <!-- trending-right -->
-        <div class="grid grid-cols-2 max-w-72 ml-3 xl:max-w-screen-xl xl:mx-auto xl:grid xl:grid-cols-3">
+        <div class=" my-5 grid grid-cols-2 max-w-72 ml-3 xl:max-w-screen-xl xl:mx-auto xl:grid xl:grid-cols-3">
           <!-- card-1 -->
           <div class="bg-white xl:w-72 h-28 flex mb-5 justify-evenly p-5 rounded-md">
             <div class="bg-color1 w-20 h-20 flex rounded-md -ml-3">
@@ -333,10 +330,10 @@
         </h1>
       </div>
       <!-- low-pic -->
-      <div class="xl:flex xl:justify-between xl:gap-4 xl:max-w-screen-xl xl:mx-auto max-w-80 mx-auto">
+      <div class="ml-10 xl:flex xl:justify-between xl:gap-4 xl:max-w-screen-xl xl:mx-auto max-w-80 mx-auto">
         <!-- left -->
         <div
-          class=" xl:w-64 xl:h-96 flex justify-evenly  xl:flex-1 xl:low-left bg-gradient-to-tl from-color3 to-color4 rounded-lg">
+          class="max-w-72 h-56 xl:w-64 xl:h-96 flex justify-center  xl:flex-1  bg-gradient-to-tl from-color3 to-color4 rounded-lg">
           <div class="font-sora mt-20">
             <p class="hidden xl:block text-black">Under Price</p>
             <h1 class="xl:text-2xl xl:font-semibold font-semibold text-sm xl:mt-0 -mt-10 xl:ml-0 ml-7 ">Pet Grooming Mitt</h1>
@@ -353,7 +350,7 @@
         </div>
         <!-- low-right -->
         <div
-          class="max-w-72 xl:my-0 my-5 w-80 h-96 flex justify-evenly  xl:flex xl:justify-around low-left bg-gradient-to-tl from-color5 to-color6 rounded-lg">
+          class="max-w-72 xl:my-0 my-5  h-56 flex justify-evenly  xl:flex xl:justify-around low-left bg-gradient-to-tl from-color5 to-color6 rounded-lg">
           <div class= " xl:mt-20 xl:pt-10 font-sora mt-24 ml-5">
             <p class="font-semibold text-xl xl:ml-5 -mt-10">T-Shirt for Dogs</p>
             <h1 class="text-amber-400 font-semibold xl:text-2xl ">$7.99</h1>
@@ -361,7 +358,7 @@
 
           <!-- low-right -->
           <div>
-            <img class="w-80 xl:mt-32 mt-28" src="./c1-assets/cute-pet-mid.png" alt="">
+            <img class="w-80 xl:mt-32 mt-2" src="./c1-assets/cute-pet-mid.png" alt="">
           </div>
 
 
@@ -371,14 +368,14 @@
       </div>
 
     </section>
-    <section class=" ml-3 max-w-72 my-10 xl:max-w-screen-xl  xl-my-20 ">
-      <div class="absolute z-10 bg-color1 py-10 rounded-xl xl:flex xl:justify-around  space-y-4 xl:max-w-screen-xl xl:mx-auto max-w-72">
+    <section class=" ml-12 max-w-72 my-10 xl:max-w-screen-xl xl:mx-auto  xl:my-20 ">
+      <div class="absolute z-10 bg-color1 py-10 rounded-xl xl:flex xl:justify-around  space-y-4 xl:max-w-screen-xl xl:mx-auto max-w-72 xl:px-52">
         <div>
           <img class="p-5" src="./c1-assets/cute-pet-mid.png" alt="cute pet">
         </div>
-        <div class="text-center xl:pt-32">
-          <h1 class="font-sora text-xl font-semibold">Get Pawsome News!</h1>
-          <p class="font-sora text-sm">Exclusive training tips, ticks, product deals and more.</p>
+        <div class=" xl:pb-16 xl:mt-10 xl:ml-24 xl:text-left text-center">
+          <h1 class="font-sora text-xl font-bold xl:my-5 ">Get Pawsome News!</h1>
+          <p class="font-sora text-sm xl:mb-5">Exclusive training tips, ticks, product deals and more.</p>
           <input type="text" placeholder="Enter Email" class="input input-bordered w-72 " />
           <br> <br>
           <button class="btn font-sora text-black  xl:w-24 xl:h-8 bg-yellow-300">Subscribe</button>
@@ -397,7 +394,7 @@
           <img src="./c1-assets/logo-footer.png" alt="">
           <h1 class="font-semibold text-xl xl:ml-2 xl:mt-2">Browse4Pets</h1>
         </div> <br> 
-        <h1 class="w-96">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>friends</h1>
+        <h1 class="xl:w-96 max-w-72">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>friends</h1>
       </div>
       </nav>
       <nav>
